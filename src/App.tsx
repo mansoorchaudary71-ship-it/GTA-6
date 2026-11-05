@@ -47,7 +47,7 @@ export default function App() {
 
   return (
     <HelmetProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-[#0B0614] text-[#FFF5FB] bg-grain font-sans">
           {/* Top Sticky Navbar */}
